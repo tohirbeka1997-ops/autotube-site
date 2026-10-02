@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy Policy - AutoTube</title>
+  <meta name="description" content="Privacy Policy of AutoTube, a private single-owner tool that uses YouTube API Services.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <a class="brand" href="./">AutoTube</a>
+    <nav>
+      <a href="./">Home</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Use</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Privacy Policy</h1>
+    <p class="meta">Effective date: October 2, 2026 &middot; Last updated: October 2, 2026</p>
+
+    <p>This Privacy Policy explains what information AutoTube ("the app", "we") accesses, stores and uses
+      when it connects to a Google / YouTube account, and how that information can be deleted.</p>
+
+    <div class="panel">
+      <strong>Summary.</strong> AutoTube is a private tool with a single user - its own developer. It only
+      connects to YouTube channels owned by the developer. All data stays on the developer's own computer.
+      Nothing is sold, shared, or used for advertising.
+    </div>
+
+    <h2>1. AutoTube uses YouTube API Services</h2>
+    <p>AutoTube uses <strong>YouTube API Services</strong> (the YouTube Data API v3) to upload videos and set
+      thumbnails on the owner's channels. By using AutoTube you agree to be bound by the
+      <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a>
+      (<a href="https://www.youtube.com/t/terms">https://www.youtube.com/t/terms</a>).
+      Google's handling of your data is described in the
+      <a href="http://www.google.com/policies/privacy">Google Privacy Policy</a>
+      (<a href="http://www.google.com/policies/privacy">http://www.google.com/policies/privacy</a>).</p>
+
+    <h2>2. Who uses the app</h2>
+    <p>AutoTube is not offered to the public. It has no sign-up, no customer accounts and no third-party users.
+      The only person who authorizes it is the developer, and only for channels the developer owns.
+      Before authorizing, the owner agrees to this Privacy Policy.</p>
+
+    <h2>3. Google permissions (OAuth scopes) requested</h2>
+    <table>
+      <tr><th>Scope</th><th>Why it is needed</th></tr>
+      <tr>
+        <td><code>https://www.googleapis.com/auth/youtube.upload</code></td>
+        <td>Upload the owner's videos (<code>videos.insert</code>) and set their custom thumbnails
+          (<code>thumbnails.set</code>).</td>
+      </tr>
+      <tr>
+        <td><code>https://www.googleapis.com/auth/youtube.readonly</code></td>
+        <td>Read the basic details (channel ID and title) of the authorized channel
+          (<code>channels.list</code> with <code>mine=true</code>), so the owner can confirm the correct channel
+          was connected.</td>
+      </tr>
+    </table>
+
+    <h2>4. Information the app accesses and stores</h2>
+    <h3>From Google / YouTube (API Data)</h3>
+    <ul>
+      <li><strong>OAuth tokens</strong> (access token and refresh token) issued by Google after the owner signs in.
+        They are stored in a local token file on the owner's PC so scheduled uploads can run.</li>
+      <li><strong>Channel ID and channel title</strong> of the authorized channel, read once during authorization
+        and shown in the local log.</li>
+      <li><strong>Video IDs</strong> that YouTube returns for videos uploaded by the app, kept in a local history
+        file so the owner can find each upload.</li>
+    </ul>
+    <h3>Sent to YouTube</h3>
+    <ul>
+      <li>The owner's own video files, thumbnails and metadata (title, description, tags, category, privacy
+        status, "made for kids" status and the altered or synthetic content disclosure).</li>
+    </ul>
+    <h3>What the app does not access</h3>
+    <ul>
+      <li>It never asks for, sees or stores the owner's Google password.</li>
+      <li>It does not read other users' data, comments, subscribers, messages, watch history or analytics.</li>
+      <li>It does not access any data of third parties, because there are no third-party users.</li>
+    </ul>
+
+    <h2>5. How the information is used</h2>
+    <p>The information above is used only to upload the owner's videos to the owner's channels and to keep a
+      local record of those uploads. It is not used for advertising, profiling, analytics or any other purpose.</p>
+
+    <h2>6. Where it is stored and how it is protected</h2>
+    <p>All information is stored <strong>locally on the owner's personal Windows PC</strong> (the token file and a
+      local history file inside the app's folder). AutoTube has no server and no database, and does not send this
+      information anywhere except to Google's own API endpoints over HTTPS. The token file is excluded from
+      source control and is never published or shared.</p>
+
+    <h2>7. Sharing</h2>
+    <p>AutoTube does not sell, rent, trade or share any user information or API Data with anyone - internal
+      or external. The only party that receives data is Google/YouTube, when the owner's videos are uploaded.</p>
+
+    <h2>8. Third-party content, advertising and cookies</h2>
+    <p>AutoTube does not serve advertisements and does not allow third parties to serve content or ads.
+      The app does not place or read cookies or similar technologies on any device or browser. This website is a
+      static page hosted on GitHub Pages; it has no cookies, analytics or trackers of its own (GitHub may keep
+      standard server logs as described in GitHub's privacy statement).</p>
+
+    <h2>9. Retention and deletion</h2>
+    <ul>
+      <li>OAuth tokens are kept only while the channel is connected. They are deleted when the owner disconnects a
+        channel or revokes access, and become unusable immediately after revocation.</li>
+      <li>Channel ID/title and video IDs are kept only as long as needed to operate the app and keep a record of
+        uploads, and are deleted when a channel is disconnected or the app is removed.</li>
+      <li>The owner can delete all stored data at any time by deleting the app's token and history files
+        (or the whole app folder) from the PC.</li>
+    </ul>
+
+    <h2>10. How to revoke access</h2>
+    <p>In addition to deleting the local files, access can be revoked at any time from the Google security
+      settings page:
+      <a href="https://security.google.com/settings/security/permissions">https://security.google.com/settings/security/permissions</a>
+      (also available at
+      <a href="https://myaccount.google.com/permissions">https://myaccount.google.com/permissions</a>).
+      Select "AutoTube" and choose "Remove access". After that, AutoTube can no longer access the account.</p>
+
+    <h2>11. Children</h2>
+    <p>AutoTube is not directed to children and does not knowingly collect information from children.</p>
+
+    <h2>12. Changes to this policy</h2>
+    <p>If this policy changes, the updated version will be published on this page with a new "Last updated" date.</p>
+
+    <h2>13. Contact</h2>
+    <p>Questions or complaints about these privacy practices can be sent to the developer:<br>
+      Tohirbek (individual developer, Uzbekistan) &middot;
+      <a href="mailto:tohirbek.a.1997@gmail.com">tohirbek.a.1997@gmail.com</a></p>
+  </main>
+
+  <footer>
+    <a href="./">Home</a>
+    <a href="terms.html">Terms of Use</a>
+    <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a>
+    <a href="http://www.google.com/policies/privacy">Google Privacy Policy</a>
+    <p>&copy; 2026 AutoTube. AutoTube is an independent tool and is not affiliated with, endorsed by or sponsored by YouTube or Google.</p>
+  </footer>
+</body>
+</html>
