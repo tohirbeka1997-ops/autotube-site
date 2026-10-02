@@ -4,13 +4,13 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- Google Search Console verification tag goes here, e.g. <meta name="google-site-verification" content="..."> -->
-  <title>AutoTube - private video publishing tool</title>
-  <meta name="description" content="AutoTube is a private, single-owner desktop tool that uploads the owner's own videos to the owner's own channels using YouTube API Services.">
+  <title>RepBeat Uploader - private video publishing tool</title>
+  <meta name="description" content="RepBeat Uploader is a private, single-owner desktop tool used by its owner to upload the owner's own videos to the owner's own YouTube channels, including REP BEAT, using YouTube API Services.">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
-    <a class="brand" href="./">AutoTube</a>
+    <a class="brand" href="./">RepBeat Uploader</a>
     <nav>
       <a href="./">Home</a>
       <a href="privacy.html">Privacy Policy</a>
@@ -19,17 +19,18 @@
   </header>
 
   <main>
-    <h1>AutoTube</h1>
-    <p class="lead">A private desktop tool that publishes the owner's own videos to the owner's own channels.</p>
+    <h1>RepBeat Uploader</h1>
+    <p class="lead">RepBeat Uploader is a private tool used by its owner to upload videos to the owner's own
+      YouTube channels, including REP BEAT.</p>
 
     <div class="panel">
-      <strong>Not a public service.</strong> AutoTube has exactly one user: its developer and owner.
+      <strong>Not a public service.</strong> RepBeat Uploader has exactly one user: its developer and owner.
       There are no customer accounts, no sign-up, and no third-party users. It runs only on the owner's own
       Windows PC and only ever connects to channels that the owner personally owns and manages.
     </div>
 
     <h2>What it does</h2>
-    <p>AutoTube is a personal automation script (Python) that helps one independent creator publish videos
+    <p>RepBeat Uploader is a personal automation script (Python) that helps one independent creator publish videos
       on a regular schedule. On the owner's PC it:</p>
     <ol>
       <li>Assembles a video from the owner's own materials: original music generated locally by the owner,
@@ -43,14 +44,14 @@
     </ol>
 
     <h2>Channels it manages</h2>
-    <p>AutoTube publishes only to channels owned by the developer:</p>
+    <p>RepBeat Uploader publishes only to channels owned by the developer:</p>
     <ul>
       <li><strong>REP BEAT</strong> - gym music and workout motivation (Shorts and long workout mixes).</li>
       <li>A facts / education channel operated by the same owner (planned).</li>
     </ul>
 
     <h2>How it uses YouTube API Services</h2>
-    <p>The owner authorizes AutoTube once per channel with Google OAuth 2.0. AutoTube then calls only these
+    <p>The owner authorizes RepBeat Uploader once per channel with Google OAuth 2.0. RepBeat Uploader then calls only these
       YouTube Data API methods, always on the owner's own channel:</p>
     <table>
       <tr><th>Method</th><th>Purpose</th></tr>
@@ -58,7 +59,7 @@
       <tr><td><code>thumbnails.set</code></td><td>Set the custom thumbnail of that video.</td></tr>
       <tr><td><code>channels.list</code> (mine=true)</td><td>Show which channel was just authorized, so the owner can confirm it is the right one.</td></tr>
     </table>
-    <p>AutoTube does not read, collect or analyse other people's videos, comments, subscribers or analytics,
+    <p>RepBeat Uploader does not read, collect or analyse other people's videos, comments, subscribers or analytics,
       and it does not automate views, likes, comments or subscriptions.</p>
 
     <p class="badge">
@@ -66,7 +67,7 @@
         <img src="developed-with-youtube.png" alt="Developed with YouTube" width="210" height="75">
       </a>
     </p>
-    <p class="meta">AutoTube uses YouTube API Services. By using AutoTube you agree to be bound by the
+    <p class="meta">RepBeat Uploader uses YouTube API Services. By using RepBeat Uploader you agree to be bound by the
       <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a>. See our
       <a href="privacy.html">Privacy Policy</a>, which links to the
       <a href="http://www.google.com/policies/privacy">Google Privacy Policy</a>.</p>
@@ -81,7 +82,7 @@
     <a href="terms.html">Terms of Use</a>
     <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a>
     <a href="http://www.google.com/policies/privacy">Google Privacy Policy</a>
-    <p>&copy; 2026 AutoTube. AutoTube is an independent tool and is not affiliated with, endorsed by or sponsored by YouTube or Google.</p>
+    <p>&copy; 2026 RepBeat Uploader. RepBeat Uploader is an independent tool and is not affiliated with, endorsed by or sponsored by YouTube or Google.</p>
   </footer>
 </body>
 </html>
